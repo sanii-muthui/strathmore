@@ -6,6 +6,9 @@ body, html {
   margin: 0;
   font-family: Arial;
 }
+h3, p{
+  color: black;
+}
 
 /* Style tab links */
 .tablink {
@@ -32,8 +35,3 @@ body, html {
   width: 100%;
   height: 100%;
 }
-
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
