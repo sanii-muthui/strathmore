@@ -2,32 +2,53 @@
 <html>
   <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Project Solaris</title>
   </head>
   <body>
-        <div class="card">
-                <div class="card-header">
-                  A SECRET LOVE STORY
+        <body>
+
+                <h2>Hover Tabs</h2>
+                <p>Move the mouse over a button inside the tabbed menu:</p>
+                
+                <div class="tab">
+                  <button class="tablinks" onmouseover="openCity(event, 'London')">London</button>
+                  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</button>
+                  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</button>
                 </div>
-                <div class="card-body">
-                  <p class="card-text">As Days pass by, the memory of Us as Strangers Again Crumbles a FairyTale that Hunts down my Frozen Heart.
-                    Perhaps i was too nice with you and ended up Loving a fantasy of my own "ghost" Town.
-                    We are A million miles apart and still you are my perfect Adventure. 
-                    Your name causes an illusion of an angel's hell in my Heart and i am stuck in this brutal infatuation that never seems to end,
-                    Knowing you Gave me A Home to conceal my Loneliness,a portion i didn't realise i will covet till eternity.
-                    Every Flower i see as days turn into months blooms your name and my dead soul awakens with delectation.
-                    *******
-                    A Beautiful Black child ,your love  breaks Hearts the moment anyone stares into those glistening eyes even all stars seem to stoop down
-                    to you for the power you have burns down all souls,A colour scheme that made me blind with a million feelings to show you How much of
-                    a masterpiece Art you are everytime i am around your Aura. Maybe one day we will rebuild old moments and turn them into beautiful memories for
-                    i am starving for your connection for there is nothing special in this unremitting toil without you being a part of it.
-                    In my Heart a spell of our Love is bound till we meet again.
-                    Goodbye my secret love Flower.</p>
+                
+                <div id="London" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
                 </div>
-              </div>
-      </body>
+                
+                <div id="Paris" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                </script>
+                   
+                </body>
 </html>
