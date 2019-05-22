@@ -6,57 +6,59 @@
     <title>Project Solaris</title>
   </head>
   <body>
-        <body>
 
-                <h2>Short Poems</h2>
-                <p>To a new begining</p>
-                
-                <div class="tab">
-                  <button class="tablinks" onmouseover="openCity(event, 'London')">SECRET STORY</button>
-                  <button class="tablinks" onmouseover="openCity(event, 'Paris')">CRYSTAL STAIRS</button>
-                  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">FAREWELL WINTER</button>
-                </div>
-                
-                <div id="London" class="tabcontent">
-                  <h3>A Secret Love Story</h3>
-                  <p>As Days pass by, the memory of Us as Strangers Again Crumbles a FairyTale that Hunts down my Frozen Heart. Perhaps i was too nice with you and ended up Loving a fantasy of my own "ghost" Town.We are A million miles apart and still you are my perfect Adventure. Your name causes an illusion of an angel's hell in my Heart and i am stuck in this brutal infatuation that never seems to end,Knowing you Gave me A Home to conceal my Loneliness,a portion i didn't realise i will covet till eternity.Every Flower i see as days turn into months blooms your name and my dead soul awakens with delectation.
-                        *******
+    <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" >News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <!--button class="tablink" onclick="openPage('About', this, 'orange')">About</button-->
+    
+    <div id="Home" class="tabcontent">
+      <h3>SECRET STORY</h3>
+      <p>As Days pass by, the memory of Us as Strangers Again Crumbles a FairyTale that Hunts down my Frozen Heart. Perhaps i was too nice with you and ended up Loving a fantasy of my own "ghost" Town.We are A million miles apart and still you are my perfect Adventure. Your name causes an illusion of an angel's hell in my Heart and i am stuck in this brutal infatuation that never seems to end,Knowing you Gave me A Home to conceal my Loneliness,a portion i didn't realise i will covet till eternity.Every Flower i see as days turn into months blooms your name and my dead soul awakens with delectation.
+        *******
 A Beautiful Black child ,your love  breaks Hearts the moment anyone stares into those glistening eyes even all stars seem to stoop down to you for the power you have burns down all souls,A colour scheme that made me blind with a million feelings to show you How much of a masterpiece Art you are everytime i am around your Aura. Maybe one day we will rebuild old moments and turn them into beautiful memories for i am starving for your connection for there is nothing special in this unremitting toil without you being a part of it. 
 In my Heart a spell of our Love is bound till we meet again.
 Goodbye my secret love Flower.</p>
-                </div>
-                
-                <div id="Paris" class="tabcontent">
-                  <h3>Crystal Stairs</h3>
-                  <p>Every Morning my heart bound of Love warms up knowing i have another chance to create memories with my beguiling queen💫🥺... You are filled with extraordinary merry and Love🌈of a never ending beautiful beginning.. We are a secret close to each other🔗a lifeline of pure connection💘...Without you am Out of control😭.. I Could loose you but i will never give up fighting for our Love...i want to protect you 🧚🏾‍♂at all times ... Look out for you because
-                        my soul beats for you🌪.. I want to share a life with you where no obstacle seperates us🤞🏾Give you sincere Love .. Trust You.. Build a kingdom of Loyalty👸🏽🤴🏾And cruise everywhere Love takes us🌬A Fairytale come True.. Guided by your grace i find my place😇sitted hand in hand under the branches of a blooming heather staring at your shining state of art👩🏽‍🎨.. Darling am blinded by you🤩... I WILL LOVE FOREVER</p> 
-                </div>
-                
-                <div id="Tokyo" class="tabcontent">
-                  <h3>Farewell Winter</h3>
-                  <p>Under the mistletoe, as the lights fade away,staring into your beautiful shinning eyes, the glimpse of my Loneliness drifts away like the clouds as your Love is not so hard to get and but so hard to earn  but i don't know if we are still waiting for a fairytale because i can't see clear😣....My love for you burns with passion but am tired of counting all the scars..Mixing my fantasy for a false reality.. Staring at the sky trying to survive without you but like the rains.. they can't survive without the clouds... 
-                    *******
+    </div>
+    
+    <div id="News" class="tabcontent">
+      <h3>FAREWELL WINTER</h3>
+      <p>Under the mistletoe, as the lights fade away,staring into your beautiful shinning eyes, the glimpse of my Loneliness drifts away like the clouds as your Love is not so hard to get and but so hard to earn  but i don't know if we are still waiting for a fairytale because i can't see clear😣....My love for you burns with passion but am tired of counting all the scars..Mixing my fantasy for a false reality.. Staring at the sky trying to survive without you but like the rains.. they can't survive without the clouds... 
+        *******
 Am afraid you will become a memory,a distorted vibe without a connection maybe, who knows....Love takes time and for you i will always be patient since my broken heart reminds me of how much i ache for your soul.And i know Your mind might remind you of how abandoned am i 
-But like the waves i will always drift wherever you take me...</p>
-                </div>
-                
-                <div class="clearfix"></div>
-                
-                <script>
-                function openCity(evt, cityName) {
-                  var i, tabcontent, tablinks;
-                  tabcontent = document.getElementsByClassName("tabcontent");
-                  for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                  }
-                  tablinks = document.getElementsByClassName("tablinks");
-                  for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                  }
-                  document.getElementById(cityName).style.display = "block";
-                  evt.currentTarget.className += " active";
-                }
-                </script>
-                   
-                </body>
+But like the waves i will always drift wherever you take me...</p> 
+    </div>
+    
+    <div id="Contact" class="tabcontent">
+      <h3>CRYSTAL STAIRS</h3>
+      <p>Every Morning my heart bound of Love warms up knowing i have another chance to create memories with my beguiling queen💫🥺... You are filled with extraordinary merry and Love🌈of a never ending beautiful beginning.. We are a secret close to each other🔗a lifeline of pure connection💘...Without you am Out of control😭.. I Could loose you but i will never give up fighting for our Love...i want to protect you 🧚🏾‍♂at all times ... Look out for you because
+        my soul beats for you🌪.. I want to share a life with you where no obstacle seperates us🤞🏾Give you sincere Love .. Trust You.. Build a kingdom of Loyalty👸🏽🤴🏾And cruise everywhere Love takes us🌬A Fairytale come True.. Guided by your grace i find my place😇sitted hand in hand under the branches of a blooming heather staring at your shining state of art👩🏽‍🎨.. Darling am blinded by you🤩... I WILL LOVE YOU FOREVER</p>
+    </div>
+    
+    <!--div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div-->
+    
+    <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+    </body>
+  
 </html>
