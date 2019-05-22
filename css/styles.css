@@ -1,12 +1,12 @@
 body{
-    background-color:black;
+    background-color:grey;
 }
-h1{
-    color: darkred;
-    text-align: center;
-}
+
 p{
     text-align: center;
-    color: green;
-    font-size: 50px;
+    color:whitesmoke;
+    font-size: 10px;
+}
+.card-header{
+    font-size: 20px;
 }
